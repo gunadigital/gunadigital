@@ -231,6 +231,10 @@
         @apply my-4 text-sm text-justify lg:text-xl lg:my-20;
     }
 
+    .service-wrapper > .card > .card-body-3 {
+        @apply my-4 text-sm text-justify lg:text-xl lg:my-12;
+    }
+
     .service-wrapper > .card > .card-button {
         @apply block py-1 text-base transition bg-[#019bfb] duration-500 ease-in-out hover:bg-[#018bfb] focus:bg-[#018bfb] focus:ring focus:ring-[#019bfb] text-center text-white rounded-2xl lg:text-xl lg:py-2;
     }
