@@ -27,8 +27,6 @@ $(document).ready(function () {
                 spaceBetween: 50,
             },
         },
-        autoplay: {
-            pauseOnMouseEnter: true,
-        },
+        autoplay: true,
     });
 });
