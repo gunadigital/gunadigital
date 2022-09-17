@@ -96,7 +96,7 @@
     }
 
     .hero {
-        @apply lg:h-[600px] font-['Nunito'] relative overflow-hidden pb-4 lg:pb-0 min-h-screen;
+        @apply font-['Nunito'] relative overflow-hidden pb-4 lg:pb-0 lg:min-h-screen;
     }
 
     .hero-container {
@@ -172,7 +172,7 @@
     }
 
     .review {
-        @apply font-['Nunito'] min-h-screen;
+        @apply font-['Nunito'] lg:min-h-screen pb-4 lg:pb-0;
     }
 
     .review-container {
@@ -204,7 +204,7 @@
     }
 
     .service {
-        @apply lg:h-[600px] pb-4 font-['Nunito'] min-h-screen;
+        @apply pb-4 lg:pb-0 font-['Nunito'] lg:min-h-screen;
     }
 
     .service-container {
