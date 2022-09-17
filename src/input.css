@@ -1,0 +1,241 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    * {
+        @apply scroll-smooth;
+    }
+
+    ::-webkit-scrollbar {
+        @apply w-1;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        @apply bg-[#518aad];
+    }
+
+    ::-webkit-scrollbar-track {
+        @apply bg-white;
+    }
+
+    body {
+        @apply from-[#518aad] via-[#518aad] to-white bg-gradient-to-t;
+    }
+
+    .about {
+        @apply bg-white font-['Nunito'] py-3;
+    }
+
+    .about-container {
+        @apply px-3 lg:px-10;
+    }
+
+    .about-title {
+        @apply mb-2 text-2xl font-bold lg:pt-10 lg:text-4xl lg:mb-4;
+    }
+
+    .about-section {
+        @apply w-full;
+    }
+
+    .about-wrapper {
+        @apply flex flex-wrap justify-between pb-3 lg:flex-nowrap gap-y-4 lg:gap-x-10;
+    }
+
+    .about-section > .about-text {
+        @apply text-sm font-medium lg:text-base;
+    }
+
+    .about-section > .divider {
+        @apply block bg-black w-10 lg:w-16 h-[2px] mb-2 lg:mb-4;
+    }
+
+    .about-section > .title {
+        @apply text-lg font-semibold lg:text-2xl;
+    }
+
+    .nav-bars {
+        @apply bg-[#019bfb] w-7 h-[2px] block my-1 transition duration-500 ease-in-out;
+    }
+
+    .nav-toggle {
+        @apply absolute top-0 right-0 p-1 lg:hidden;
+    }
+
+    .active > .nav-bars:nth-child(1) {
+        @apply -rotate-[26deg];
+    }
+
+    .active > .nav-bars:nth-child(2) {
+        @apply scale-0;
+    }
+
+    .active > .nav-bars:nth-child(3) {
+        @apply rotate-[26deg];
+    }
+
+    .card-footer > .btn-1 {
+        @apply block py-1 bg-[#019bfb] hover:bg-[#018bfb] focus:bg-[#018bfb] focus:ring focus:ring-[#019bfb] transition duration-500 ease-in-out rounded-3xl text-white text-sm px-3 md:text-base md:px-4 lg:px-6 lg:py-[6px] lg:text-lg;
+    }
+
+    .card-footer > .btn-2 {
+        @apply block bg-[#243047] py-1 px-3 rounded-3xl text-white text-sm md:text-base md:px-4 focus:ring focus:ring-[#243047] transition duration-500 ease-in-out ml-0 lg:ml-10 lg:py-[6px] lg:px-6 lg:text-lg;
+    }
+
+    .footer {
+        @apply pt-4 text-xs font-medium text-center lg:text-sm;
+    }
+
+    .header {
+        @apply bg-white shadow font-['Inter'] fixed top-0 w-full z-50;
+    }
+
+    .header-container {
+        @apply px-3 py-1 lg:px-10 lg:py-5;
+    }
+
+    .hero {
+        @apply font-['Nunito'] relative overflow-hidden pb-4 lg:pb-0 lg:min-h-screen;
+    }
+
+    .hero-container {
+        @apply px-3 lg:px-10;
+    }
+
+    .hero-card-1 {
+        @apply px-4 py-1 bg-white border-2 border-white rounded-2xl bg-opacity-30 border-opacity-30 lg:h-80 lg:w-3/5 lg:py-4 lg:px-8 backdrop-blur-md;
+    }
+
+    .hero-card-2 {
+        @apply hidden px-4 py-1 bg-white border-2 border-white rounded-2xl bg-opacity-30 border-opacity-30 lg:h-80 lg:w-[30%] lg:py-4 lg:px-8 lg:block backdrop-blur-md;
+    }
+
+    .hero-card-1 > .card-body {
+        @apply text-sm text-justify md:text-base lg:text-lg;
+    }
+
+    .hero-card-1 > .card-footer {
+        @apply flex justify-between my-2 lg:justify-start lg:my-8;
+    }
+
+    .hero-card-1 > .card-img {
+        @apply block w-40 mx-auto my-2 lg:hidden;
+    }
+
+    .hero-card-1 > .card-title {
+        @apply mb-0 text-lg font-bold text-center lg:mb-10 md:text-xl lg:text-3xl lg:text-left;
+    }
+
+    .hero-card-2 > .card-img {
+        @apply h-full m-auto;
+    }
+
+    .hero-wrapper {
+        @apply items-center block mt-12 lg:flex lg:justify-between lg:mt-36;
+    }
+
+    .hero > .blob-1 {
+        @apply absolute hidden lg:block -z-10 lg:right-40;
+    }
+
+    .hero > .blob-2 {
+        @apply absolute scale-[.30] -z-10 lg:scale-100 lg:top-36 -left-10 top-20;
+    }
+
+    .hero > .blob-3 {
+        @apply absolute scale-[.30] -right-28 md:-top-20 -z-10 lg:scale-100 lg:right-10 lg:top-32;
+    }
+
+    .navbar {
+        @apply relative lg:items-center lg:flex lg:justify-between;
+    }
+
+    .navbar-brand {
+        @apply block py-1 lg:py-0;
+    }
+
+    .navbar-brand > .navbar-img {
+        @apply w-12 lg:w-24;
+    }
+
+    .navbar-nav {
+        @apply items-center hidden p-1 mt-2 bg-white border rounded-md lg:mt-0 lg:border-0 lg:p-0 lg:flex lg:gap-x-10 lg:w-full lg:ml-10;
+    }
+
+    .navbar-nav > .nav-button {
+        @apply block text-sm lg:text-base bg-[#019bfb] ml-auto text-center text-white py-1 rounded-md hover:bg-[#018bfb] my-px focus:bg-[#018bfb] focus:ring focus:ring-[#019bfb] transition duration-300 ease-in-out lg:px-6 lg:py-2 lg:rounded-3xl;
+    }
+
+    .navbar-nav > .nav-link {
+        @apply block py-1 my-px text-sm text-center lg:text-base hover:text-[#019bfb] transition duration-500 ease-in-out focus:text-[#019bfb];
+    }
+
+    .review {
+        @apply font-['Nunito'] lg:min-h-screen pb-4 lg:pb-0;
+    }
+
+    .review-container {
+        @apply px-3 lg:px-10;
+    }
+
+    .review-title {
+        @apply pt-10 pb-8 text-2xl font-bold text-center text-white lg:text-5xl lg:pt-24 lg:pb-11;
+    }
+
+    .swiper-slide > .card-header {
+        @apply text-base font-bold text-center lg:text-xl;
+    }
+
+    .swiper-slide > .card-text {
+        @apply text-xs text-center lg:text-sm;
+    }
+
+    .swiper-slide > .card {
+        @apply border-2 p-2 rounded-2xl border-[#243047] mt-4 lg:mt-8;
+    }
+
+    .swiper-slide > .card > .card-text {
+        @apply text-sm text-center lg:text-base;
+    }
+
+    .swiper-wrapper > .card {
+        @apply p-4 bg-white shadow-lg rounded-2xl;
+    }
+
+    .service {
+        @apply pb-4 lg:pb-0 font-['Nunito'] lg:min-h-screen;
+    }
+
+    .service-container {
+        @apply px-3 lg:px-10;
+    }
+
+    .service-title {
+        @apply pt-10 text-2xl font-bold text-center text-white lg:text-5xl lg:pt-24;
+    }
+
+    .service-wrapper {
+        @apply flex flex-wrap items-center justify-between mt-2 gap-y-4 lg:mt-8;
+    }
+
+    .service-wrapper > .card {
+        @apply block w-full px-4 py-2 bg-white shadow-lg backdrop-blur-md rounded-2xl lg:w-[30%] lg:h-96;
+    }
+
+    .service-wrapper > .card > .card-body {
+        @apply my-4 text-sm text-justify lg:text-xl lg:my-16;
+    }
+
+    .service-wrapper > .card > .card-body-2 {
+        @apply my-4 text-sm text-justify lg:text-xl lg:my-20;
+    }
+
+    .service-wrapper > .card > .card-button {
+        @apply block py-1 text-base transition bg-[#019bfb] duration-500 ease-in-out hover:bg-[#018bfb] focus:bg-[#018bfb] focus:ring focus:ring-[#019bfb] text-center text-white rounded-2xl lg:text-xl lg:py-2;
+    }
+
+    .service-wrapper > .card > .card-title {
+        @apply text-lg font-semibold text-center lg:text-3xl;
+    }
+}
